@@ -1,0 +1,84 @@
+body {
+    padding-top: 70px;
+    align-items: center;
+    background-color: #2E8B57; /* Sea blue background */
+    margin: 0; /* Ensures no extra white space around the edges */
+}
+
+#board {
+    padding: 10px;
+    max-width: 500px;
+    min-width: 300px;
+    background-color: transparent; /* Ensures board background is not white */
+}
+
+/* Make navbar background blue and center the logo */
+.navbar-default {
+    background-color: blue;
+    border-color: blue;
+}
+
+#logo {
+    text-align: center;
+    color: white;
+    font-size: 40px;
+    font-weight: bold;
+    margin: 0;
+    padding: 20px;
+    background: linear-gradient(270deg, #1e3c72, #2a5298, #1e3c72);
+    background-size: 600% 600%;
+    animation: gradientMove 10s ease infinite;
+}
+
+/* Animation Keyframes */
+@keyframes gradientMove {
+    0% { background-position: 0% 50%; }
+    50% { background-position: 100% 50%; }
+    100% { background-position: 0% 50%; }
+}
+
+
+/* Change the right panel background to blue */
+#secondWindow {
+    background-color: blue;
+    padding: 20px;
+    border-radius: 10px;
+    color: white; /* Makes text readable */
+}
+
+/* Optional: Make buttons stand out better on blue background */
+#controls .btn {
+    margin-right: 10px;
+    margin-top: 10px;
+}
+
+
+
+
+#moveTable {
+    width: 100%;
+    max-height: 250px;
+    overflow: auto;
+    background-color: transparent; /* Ensures no white background */
+}
+
+
+/* 🔘 Custom Button Styles */
+#backBtn {
+    background-color: #e91e63; /* Pink */
+    color: white;
+    border: none;
+}
+
+#reset {
+    background-color: #4caf50; /* Green */
+    color: white;
+    border: none;
+}
+
+/* 🎯 Custom Select Dropdown */
+#sel1 {
+    background-color: #2196f3; /* Blue */
+    color: white;
+    border: none;
+}
