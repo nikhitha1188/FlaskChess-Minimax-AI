@@ -1,11 +1,58 @@
-This is a simple chess engine/interface created using flask.
-It uses chessboard.js and chess.js for the logic of the frontend chessboard, and python chess for the
-logic of the backend chessboard. All calculation is done on the backend using python.
+Flask Chess Minimax AI
 
-In order to run this application on your own machine, please install flask and python chess.
+A simplified chess game where a human player competes against an AI using the Minimax algorithm.
+The board contains only three pieces, making the game fast, focused, and ideal for understanding AI decision-making.
 
-Install flask by running:
-    pip install flask
+📌 Game Overview
 
-Install python chess by running:
-    pip install python-chess[uci,gaviota]
+This is a custom-built chess variant played on a standard board but with only 3 pieces:
+
+White (Player)
+
+♔ King
+
+♖ Rook
+
+Black (AI)
+
+♚ King
+
+The player's objective is to checkmate the AI’s King, while the AI’s objective is to survive using strategic movement.
+
+🧠 AI Behavior (Minimax Algorithm)
+
+The AI King uses a Minimax search strategy to evaluate all possible moves and choose the safest one.
+The algorithm ensures:
+
+Avoiding danger zones
+The AI does not move into squares attacked by the player's King or Rook.
+
+Survival-focused decision-making
+AI prioritizes moves that keep it alive the longest.
+
+Optimal path selection
+AI explores move outcomes and selects the one with the best evaluation score.
+
+🎨 Custom GUI
+
+The game features a custom-designed GUI, as shown in the screenshot, with:
+
+Clear board visuals
+
+Marked move boundaries
+
+Interactive piece movement
+
+Real-time display of player and AI turns
+
+Tech Stack
+
+Python
+
+Flask
+
+Minimax Algorithm
+
+HTML / CSS / JavaScript
+
+Built using Flask + HTML/CSS/JS.
